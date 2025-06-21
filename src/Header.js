@@ -8,11 +8,11 @@ const Header = () => {
   return (
     
     <header className="navbar">
-      {/* <div className="navbar__logo">
-        <Link to="/">🏡 Stratcom States</Link>
-      </div> */}
+      <div className="navbar__logo">
+        <Link to="/">🏡 Stratcom Computer School</Link>
+      </div>
 
-      {/* <nav className={`navbar__links ${menuOpen ? 'open' : ''}`}>
+       <nav className={`navbar__links ${menuOpen ? 'open' : ''}`}>
         <Link to="/">Home</Link>
         <Link to="/properties">Properties</Link>
         <Link to="/about">About</Link>
@@ -21,13 +21,12 @@ const Header = () => {
           <Link to="/login" className="btn login">Login</Link>
           <Link to="/signup" className="btn signup">Sign Up</Link>
         </div>
-      </nav> */}
-
-      {/* <div className="navbar__toggle" onClick={() => setMenuOpen(!menuOpen)}>
+      </nav> 
+       <div className="navbar__toggle" onClick={() => setMenuOpen(!menuOpen)}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
-      </div> */}
+      </div> 
     </header>
   );
 };
