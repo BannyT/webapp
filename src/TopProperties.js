@@ -39,9 +39,9 @@ const TopProperties = () => {
            <h2>Top Properties in Us</h2>
          <input className='search' type="text" placeholder='Search property by name' /> 
          <div className="property-grid">
-        {properties.map((prop) => (
+         {properties.map((prop) => (
           <div className="property-card" key={prop.id}>
-            <img src={prop.image} alt={prop.title} />
+            <img className='propimage' src={prop.image} alt={prop.title} />
             <div className="property-details">
               <h3>{prop.title}</h3>
               <p>{prop.location}</p>
@@ -50,7 +50,7 @@ const TopProperties = () => {
             </div>
           </div>
         ))}
-      </div>
+         </div>
 
        </section>
       
