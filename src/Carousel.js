@@ -26,7 +26,21 @@ const Carousel = () => {
 
   return (
     <div className='carousel'>
-        
+         {slides.map((slide,index)=>(
+              <div
+              className={`carousel__slide ${index === current ? 'active' : ''}`}
+              key={slide.id}
+            >
+              <img src={slide.image} alt={slide.title} />
+              <div className="carousel__caption">
+                <h2>{slide.title}</h2>
+                <p>{slide.subtitle}</p>
+                <button className="carousel__btn">Book Now</button>
+              </div>
+            </div>
+         ))
+
+         }
     </div>
   )
 }
