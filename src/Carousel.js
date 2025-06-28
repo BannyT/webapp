@@ -1,7 +1,9 @@
-import React from 'react'
+import React,{useEffect,useState,useRef} from 'react'
 import "./Carousel.css"
 
 const Carousel = () => {
+    const [current,setCurrent]=useState(0);
+    const touchStartX = useRef(null);
     
     const slides = [
         {
@@ -23,7 +25,33 @@ const Carousel = () => {
           subtitle: '$2,200/month - Central Park View',
         },
       ];
-
+      
+      useEffect(() => {
+        const timer = setInterval(() => {
+          setCurrent((prev) => (prev + 1) % slides.length);
+        }, 7000);
+        return () => clearInterval(timer);
+      }, []);
+    
+      const prevSlide = () => {
+        setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+      };
+    
+      const nextSlide = () => {
+        setCurrent((prev) => (prev + 1) % slides.length);
+      };
+    
+      const handleTouchStart = (e) => {
+        touchStartX.current = e.touches[0].clientX;
+      };
+    
+      const handleTouchEnd = (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const diff = touchStartX.current - touchEndX;
+        if (diff > 50) nextSlide();
+        if (diff < -50) prevSlide();
+      };
+      
   return (
     <div className='carousel'>
          {slides.map((slide,index)=>(
