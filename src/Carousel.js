@@ -25,7 +25,9 @@ const Carousel = () => {
       ];
 
   return (
-    <div> Here is my carousel</div>
+    <div className='carousel'>
+        
+    </div>
   )
 }
 
