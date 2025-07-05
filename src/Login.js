@@ -5,6 +5,7 @@ const Login = () => {
   return (
      <section className='login-section'>
          <div className='login-card'>
+             <img className='logo' src="./images/statlogo.jpg"/>
             <h2>Welcome Back To Login</h2>
             <p>log in to your application  here</p>
             <form  className='login-form'>
