@@ -1,7 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import "./TopProperties.css"
 
 const TopProperties = () => {
+    const nav = useNavigate();
+
     const properties = [
         {
           id: 1,
@@ -33,6 +36,10 @@ const TopProperties = () => {
         },
       ];
     
+      //javascrio code 
+  const  moveToBooking =()=>{
+      nav('/booking')
+  }
 
   return (
        <section className="top-properties">
@@ -46,7 +53,7 @@ const TopProperties = () => {
               <h3>{prop.title}</h3>
               <p>{prop.location}</p>
               <span>{prop.price}</span>
-              <button  className="book-now">Book Now</button>
+              <button onClick={moveToBooking} className="book-now">Book Now</button>
             </div>
           </div>
         ))}

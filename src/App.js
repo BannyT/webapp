@@ -8,6 +8,7 @@ import Home from './Home';
 import Login from './Login';
  import Signup  from  "./Signup"
 import About from './About';
+import Booking from './Booking';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <Route path="/" element={<Home/>}/> 
         <Route path="/about" element={<About/>}/>
         <Route path="/login" element={<Login/>}/>
-        <Route path="/signup" element={<Signup/>}/>  
+        <Route path="/signup" element={<Signup/>}/>   
+        <Route path="/booking" element={<Booking/>}/> 
         <Route path="/properties" element={<TopProperties/>}/> 
        </Routes>
     </BrowserRouter>
