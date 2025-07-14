@@ -14,6 +14,14 @@ const Booking = () => {
                    <form className='booking-form'>
                          <h2>Book Your Stay</h2>
                          <input  type="text" placeholder="Enter full Name"/>
+                         <input  type="email" placeholder="Enter Email"/>
+                          <label>Checkin Date</label>
+                         <input  type="date" />
+                         <label>Check Out Date</label>
+                         <input  type="date" />
+                         <label>Number of people</label>
+                         <input  type="number" />
+                         <button> Confirm Booking</button>
                    </form>
              </div>
         </div>
