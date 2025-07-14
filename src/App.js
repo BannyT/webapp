@@ -9,6 +9,7 @@ import Login from './Login';
  import Signup  from  "./Signup"
 import About from './About';
 import Booking from './Booking';
+import ContactUs from './ContactUS';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
        <Header/>
        <Routes>
         <Route path="/" element={<Home/>}/> 
-        <Route path="/about" element={<About/>}/>
+        <Route path="/about" element={<About/>}/>        
+        <Route path="/contact" element={<ContactUs/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>   
         <Route path="/booking" element={<Booking/>}/> 
