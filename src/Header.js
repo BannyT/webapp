@@ -17,7 +17,7 @@ const Header = () => {
         <Link to="/properties">Properties</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link> 
-        <Link to="/blog">Blog</Link>
+        {/* <Link to="/blog">Blog</Link> */}
         <div className="navbar__auth">
           <Link to="/login" className="btn login">Login</Link>
           <Link to="/signup" className="btn signup">Sign Up</Link>

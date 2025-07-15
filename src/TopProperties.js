@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import Footer from './Footer';
 import "./TopProperties.css"
 
 const TopProperties = () => {
@@ -57,8 +58,8 @@ const TopProperties = () => {
             </div>
           </div>
         ))}
-         </div>
-
+         </div><br></br><br></br>
+        {/* <Footer/> */}
        </section>
       
   )
