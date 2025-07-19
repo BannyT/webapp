@@ -9,7 +9,7 @@ import Login from './Login';
  import Signup  from  "./Signup"
 import About from './About';
 import Booking from './Booking';
-import ContactUs from './ContactUS';
+import ContactUs from './ContactUs';
 
 function App() {
   return (
