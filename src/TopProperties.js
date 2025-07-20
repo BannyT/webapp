@@ -38,8 +38,12 @@ const TopProperties = () => {
       ];
     
       //javascrio code 
-  const  moveToBooking =()=>{
-      nav('/booking')
+  const  moveToBooking =(prop)=>{
+       nav('/booking',{
+        state:{
+          propertyData:prop
+        }
+       })
   }
 
   return (
@@ -54,7 +58,7 @@ const TopProperties = () => {
               <h3>{prop.title}</h3>
               <p>{prop.location}</p>
               <span>{prop.price}</span>
-              <button onClick={moveToBooking} className="book-now">Book Now</button>
+              <button onClick={()=>moveToBooking(prop)} className="book-now">Book Now</button>
             </div>
           </div>
         ))}
