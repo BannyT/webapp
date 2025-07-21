@@ -10,6 +10,7 @@ import Login from './Login';
 import About from './About';
 import Booking from './Booking';
 import ContactUs from './ContactUs';
+import MyBooking from './MyBooking';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home/>}/> 
         <Route path="/about" element={<About/>}/>        
         <Route path="/contact" element={<ContactUs/>}/>
+        <Route path='/mybooking' element={<MyBooking/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>   
         <Route path="/booking" element={<Booking/>}/> 

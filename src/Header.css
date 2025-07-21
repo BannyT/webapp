@@ -91,6 +91,9 @@
     background-color: var(--text);
     border-radius: 2px;
   }
+  .logo{
+    height: 50px !important;
+}
   
   /* Responsive */
   @media (max-width: 768px) {

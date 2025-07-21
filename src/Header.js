@@ -9,7 +9,7 @@ const Header = () => {
     
     <header className="navbar">
       <div className="navbar__logo">
-        <Link to="/">🏡 Computer School</Link>
+        <Link to="/">🏡 Real Estate</Link>
       </div>
 
        <nav className={`navbar__links ${menuOpen ? 'open' : ''}`}>
@@ -21,6 +21,7 @@ const Header = () => {
         <div className="navbar__auth">
           <Link to="/login" className="btn login">Login</Link>
           <Link to="/signup" className="btn signup">Sign Up</Link>
+          <Link to='/mybooking' className='btn login'>My booking</Link>
         </div>
       </nav> 
        <div className="navbar__toggle" onClick={() => setMenuOpen(!menuOpen)}>

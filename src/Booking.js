@@ -31,7 +31,8 @@ const Booking = ({route}) => {
                 email,
                 checkin,
                 checkout,
-                numofpeople
+                numofpeople,
+                status:'pending'
               });
               alert('Booking Successfuly Confirmed')
              }catch(err){
