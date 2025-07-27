@@ -4,28 +4,7 @@ import { collection, query, where, getDocs } from 'firebase/firestore';
 import { db } from './firebase';
 import { getAuth } from 'firebase/auth'
 
-const bookings = [
-  {
-    id: 1,
-    propertyName: 'Oceanview Apartment',
-    checkin: '2025-08-01',
-    checkout: '2025-08-05',
-    guests: 2,
-    imageUrl: 'https://source.unsplash.com/featured/?apartment',
-    location: 'Dubai Marina',
-    status: 'Confirmed',
-  },
-  {
-    id: 2,
-    propertyName: 'City Center Studio',
-    checkin: '2025-09-10',
-    checkout: '2025-09-15',
-    guests: 1,
-    imageUrl: 'https://source.unsplash.com/featured/?studio,city',
-    location: 'Downtown Kampala',
-    status: 'Pending',
-  },
-];
+
 
 const MyBooking = () => {
     const auth= getAuth()
