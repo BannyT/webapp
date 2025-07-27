@@ -16,7 +16,7 @@ const Header = () => {
     
     <header className="navbar">
       <div className="navbar__logo">
-        <Link to="/">🏡 Real Estate</Link>
+        <Link to="/">🏡 StratCom Estate</Link>
       </div>
 
        <nav className={`navbar__links ${menuOpen ? 'open' : ''}`}>
